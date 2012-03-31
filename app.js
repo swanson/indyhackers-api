@@ -37,7 +37,7 @@ clean_meta = function(response) {
         'title': response['data']['title'],
         'what': response['data']['details'],
         'updated': new Date(response['data']['updated']).getTime() / 1000,
-        'routes': get_routes(),
+        'endpoints': get_routes(),
     }
 };
 
