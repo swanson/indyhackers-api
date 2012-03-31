@@ -42,8 +42,7 @@ clean_meta = function(response) {
 };
 
 get_routes = function() {
-    var routes = app.routes.routes['get'];
-    return _.pluck(routes, 'path')
+    return _.pluck(app.routes.routes['get'], 'path')
 }
 
 clean_calendar = function(item) {
