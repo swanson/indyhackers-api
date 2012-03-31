@@ -28,7 +28,7 @@ clean_calendar = function(item) {
     return {
         'what': item['title'],
         'where': item['location'],
-        'when': item['when'][0]['start'],
+        'when': new Date(item['when'][0]['start']).getTime() / 1000,
     }
 }
 
